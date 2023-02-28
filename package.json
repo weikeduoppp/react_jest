@@ -1,0 +1,50 @@
+{
+  "name": "yewq-npm-demo",
+  "version": "1.0.0",
+  "description": "尝试npm",
+  "main": "/dist/index.js",
+  "module": "/dist/index.esm.js",
+  "unpkg": "/dist/index.umd.min.js",
+  "scripts": {
+    "doc": "father doc dev --storybook",
+    "start": "webpack serve",
+    "test": "jest",
+    "build": "npx father build"
+  },
+  "types": "types/index.d.ts",
+  "author": "yewq1995@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "27.4.1",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2",
+    "antd": "4.19.5",
+    "axios": "^0.26.1",
+    "classnames": "2.3.1",
+    "css-loader": "6.7.1",
+    "father": "^2.30.21",
+    "html-webpack-plugin": "5.5.0",
+    "jest-location-mock": "1.0.9",
+    "less": "4.1.2",
+    "less-loader": "10.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "style-loader": "3.3.1",
+    "ts-jest": "27.1.4",
+    "ts-loader": "9.2.8",
+    "typescript": "4.6.3",
+    "webpack": "5.72.0",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.8.1"
+  },
+  "files": [
+    "lib",
+    "es",
+    "dist",
+    "/types/index.d.ts"
+  ],
+  "repository": "https://github.com/weikeduoppp/npm_jest",
+  "devDependencies": {
+    "jest": "27.5.1"
+  }
+}

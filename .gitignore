@@ -1,0 +1,6 @@
+.storybook
+/node_modules
+/yarn.lock
+.docz
+/dist
+/coverage
