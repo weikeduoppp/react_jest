@@ -16,7 +16,7 @@ export interface Result<T> {
 
 // 获取用户角色身份
 export const getUserRole = async () => {
-  return axios.get<Result<GetUserRoleRes>>(
+  return axios.get<GetUserRoleRes>(
     "https://dev.usemock.com/636b59bbcc89b05b04a0bbf5/api/role"
   );
 };

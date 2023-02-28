@@ -9,6 +9,7 @@
       "apis/*": ["src/apis/*"],
       "hooks/*": ["src/hooks/*"],
       "store/*": ["src/store/*"]
-    } 
+    },
+    "types": ["node", "jest", "@testing-library/jest-dom"]
   }
 }

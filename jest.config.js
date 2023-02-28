@@ -7,6 +7,10 @@
 // const { compilerOptions } = require('./tsconfig')
 
 module.exports = {
+  // 对非 JS 静态资源做转译
+  transform: {
+    ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+  } ,
   preset: 'ts-jest',
   // jsdom 测试环境: 全局会自动拥有完整的浏览器标准 API --- 因为我们不可能把浏览器里所有的 API 都 Mock 一遍，而且不可能做到 100% 还原所有功能
   testEnvironment: "jsdom",
