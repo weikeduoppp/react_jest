@@ -20,7 +20,7 @@ const HookTest = () => {
   const [count,setCount] = useState(0);
   const [state, dispatch] = useReducer(reducer, initState)
   const fn = () => {
-    console.log(count);
+    console.log(state);
 };
   const ref = useRef(fn);
 
@@ -31,9 +31,9 @@ const HookTest = () => {
 
   useEffect(() => {
       setInterval(() => {
-          setCount(count + 1);
-          
-          // dispatch(["count", 1])
+          // setCount(count + 1);
+          // 把整个 state 的管理移动到 reducer 中，这将会消除 `useEffect` 内部对本地 state 的引用
+          dispatch(["count", 1])
       }, 500);
   }, []);
 
