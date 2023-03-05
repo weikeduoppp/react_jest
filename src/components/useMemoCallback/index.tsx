@@ -7,7 +7,7 @@ export default function Parent(props) {
     name: 1;
   }, []);
 
-  // 父组件每次渲染, 会重新创建 setName 函数
+  // 父组件每次渲染, 会重`新创建 setName 函数
   const setName = useCallback(() => {
     setState((state) => state + 1);
   }, []);
