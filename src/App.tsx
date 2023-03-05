@@ -5,7 +5,8 @@ import AuthButton from "components/AuthButton";
 // import HookTest from "components/HookTest";
 // import HookTest from "components/usePrevious";
 // import HookTest from "components/useLayoutEffect";
-import HookTest from "components/useLastest";
+// import HookTest from "components/useLastest";
+import HookTest from "components/useMemoCallback";
 const App = () => {
   return (
     <div>
