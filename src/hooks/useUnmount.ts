@@ -6,7 +6,7 @@ const useUnmount = (fn: () => void) => {
 
   useEffect(
     () => () => {
-      ref.current();
+      ref.current?.();
     },
     []
   );
