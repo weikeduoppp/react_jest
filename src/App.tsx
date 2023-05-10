@@ -6,15 +6,17 @@ import AuthButton from "components/AuthButton";
 // import HookTest from "components/usePrevious";
 // import HookTest from "components/useLayoutEffect";
 // import HookTest from "components/useLastest";
-import HookTest from "components/useMemoCallback";
+// import HookTest from "components/useMemoCallback";
+// import HookTest from "components/Test";
+import HookTest from "components/useMemoRef";
 const App = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      {/* <h1>Hello</h1> */}
       {/* <Title type="small" title="打字" /> */}
       <HookTest />
-      <AuthButton>登录</AuthButton>
-      <Button>点我</Button>
+      {/* <AuthButton>登录</AuthButton>
+      <Button>点我</Button> */}
     </div>
   )
 }
